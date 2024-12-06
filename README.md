@@ -12,7 +12,7 @@ Welcome to Arcade! This is a web app that provides a collection of fun and inter
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/jitani04/snakeGame.git
+   git clone https://github.com/jitani04/Arcade.git
 ## Technologies Used
 - HTML5
 - CSS3
