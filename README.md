@@ -1,6 +1,6 @@
-# Game Center
+# Arcade
 
-Welcome to the Game Center! This is a web app that provides a collection of fun and interactive games, including the classic **Snake Game**. Explore a variety of games designed for entertainment and brain training.
+Welcome to Arcade! This is a web app that provides a collection of fun and interactive games, including the classic **Snake Game**. Explore a variety of games designed for entertainment and brain training.
 
 ## Games Available
 
