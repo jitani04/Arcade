@@ -5,98 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Center</title>
   <link rel="stylesheet" href="home.css">
-  <style>
-    /* Styles for the Snake Animation */
-    .snake-animation-container {
-      position: relative;
-      width: 100%;
-      height: 150px;
-      background-color: #222;
-      overflow: hidden;
-      border-radius: 10px;
-    }
-
-    .snake {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: #4caf50;
-      border-radius: 50%;
-      animation: moveSnake 4s linear infinite;
-    }
-
-    @keyframes moveSnake {
-      0% {
-        top: 10%;
-        left: 0%;
-      }
-      25% {
-        top: 10%;
-        left: 80%;
-      }
-      50% {
-        top: 80%;
-        left: 80%;
-      }
-      75% {
-        top: 80%;
-        left: 0%;
-      }
-      100% {
-        top: 10%;
-        left: 0%;
-      }
-    }
-  </style>
 </head>
 <body>
   <!-- Header Section -->
-  <header>
-    <h1 id="game-center-title">Game Center</h1>
-    <p class="subtitle">Play and enjoy a variety of games!</p>
+  <header class="custom-header">
+    <div class="logo">ARCADE</div>
+    <nav class="nav">
+      <a href="#home" class="nav-link">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+    </nav>
+    <button class="sign-in-button">CREATE AN ACCOUNT</button>
+    <button class="sign-in-button">SIGN IN</button>
   </header>
+  
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="section-title">
+      <h1>Game Center</h1>
+      <select class="dropdown">
+        <option value="active">Active</option>
+        <option value="completed">Completed</option>
+      </select>
+    </div>
 
-  <!-- Game Grid -->
-  <div class="game-grid">
-    <!-- Snake Game -->
-    <div class="game-card">
-      <!-- Snake Animation Container -->
-      <div class="snake-animation-container">
-        <div class="snake"></div>
+    <!-- Game Cards -->
+    <div class="game-grid">
+      <!-- Sample Game Card -->
+      <div class="game-card">
+        <img src="race-game-placeholder.jpg" alt="Race Game" class="game-image">
+        <div class="game-info">
+          <h2 class="game-title">Snake Game</h2>
+          <p class="game-description">Use arrow keys to control the snake. Try to eat the food to score points!</p>
+          <a href="snake/snakegame.html" class="play-button-link">
+            <button class="play-button">Play</button>
+          </a>
+        </div>
       </div>
-      <h2 class="game-title">Snake Game</h2>
-      <p class="game-description">A classic snake game. Play and see how long you can survive!</p>
-      <button class="play-button" onclick="window.location.href='snakegame.html'">Play Now</button>
-    </div>
 
-    <!-- Puzzle Game -->
-    <div class="game-card">
-      <img class="game-image" src="puzzle-game-placeholder.jpg" alt="Puzzle Game">
-      <h2 class="game-title">Puzzle Game</h2>
-      <p class="game-description">Solve puzzles and train your brain with this fun game!</p>
-      <button class="play-button">Play Now</button>
+      <!-- Placeholder Game -->
+      <div class="game-card">
+        <img src="coming-soon-placeholder.jpg" alt="Coming Soon" class="game-image">
+        <div class="game-info">
+          <h2 class="game-title">Coming Soon</h2>
+          <p class="game-description">Stay tuned for new games coming your way!</p>
+          <button class="play-button disabled" disabled>Coming Soon</button>
+        </div>
+      </div>
     </div>
-
-    <!-- Memory Game -->
-    <div class="game-card">
-      <img class="game-image" src="memory-game-placeholder.jpg" alt="Memory Game">
-      <h2 class="game-title">Memory Game</h2>
-      <p class="game-description">Test your memory with this engaging matching game!</p>
-      <button class="play-button">Play Now</button>
-    </div>
-
-    <!-- Placeholder Game -->
-    <div class="game-card">
-      <img class="game-image" src="game-placeholder.jpg" alt="Placeholder Game">
-      <h2 class="game-title">Coming Soon</h2>
-      <p class="game-description">Stay tuned for new games coming your way!</p>
-      <button class="play-button" disabled>Coming Soon</button>
-    </div>
-  </div>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2024 Jenna Itani. All rights reserved.</p>
-  </footer>
 </body>
 </html>

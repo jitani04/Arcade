@@ -1,0 +1,127 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+  }
+  
+/* Header Styling */
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;
+    background-image: url('https://i.imgur.com/lTZ0K9K.png'); /* Starry background */
+    background-size: cover;
+    color: white;
+    font-family: 'VT323', monospace;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: magenta;
+    text-shadow: 0 0 5px cyan, 0 0 10px magenta;
+  }
+  
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 5px cyan;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+  }
+  
+  .sign-in-button {
+    background-color: cyan;
+    color: black;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sign-in-button:hover {
+    background-color: magenta;
+    color: white;
+  }
+  
+  /* About Page Content */
+  .main-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: white;
+  }
+  
+  .about-content {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: gray;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    background-color: #222;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px cyan;
+  }
+  
+  .close {
+    color: cyan;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .input-field {
+    background-color: #333;
+    color: white;
+    border: 1px solid cyan;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: magenta;
+  }
+  
